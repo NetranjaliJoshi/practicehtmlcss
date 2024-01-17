@@ -1,0 +1,26 @@
+13/12/23
+
+-Introduction of ajax 
+-In which application we use it 
+-working structure of ajax 
+
+*installing json-serve 
+npm install -g json-server
+
+JSON(Javascript Object Notation):
+-it is use to send and data from webserver.
+-in this data store in string formate.
+-that why to access data from server is fast and easy.
+
+-json Data will look like javascript object 
+JSON.stringify() // covert object data into json formate 
+JSON.parse() // convert json data into javascript object 
+
+*how to start json-server with database file 
+step1: to destination folder 
+        cd folderpath 
+step2: json-server --watch -p 8888 db.json 
+step3: go to browser url and 
+        http://localhost:8888
+
+        

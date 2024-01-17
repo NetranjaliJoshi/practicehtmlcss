@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style></style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-sub">
+        <span class="text">
+          <label for="w3review">Temparoyy Address:</label>
+
+          <textarea id="add" name="w3review" rows="4" cols="50">
+        35 A Madhumalti Jai Gajanan Colony GTP stop deopur dhule 
+     </textarea
+          >
+        </span>
+        <span class="text">
+          <label for="w3review">Permanet Address:</label>
+
+          <input
+            type="button"
+            id="res"
+            value="Copy address"
+            onclick="ShowAdd()"
+          />
+          <textarea
+            id="Padd"
+            name="w3review"
+            rows="4"
+            cols="50"
+            placeholder="Permanet address"
+          >
+          </textarea>
+        </span>
+      </div>
+    </div>
+
+    <script>
+      function ShowAdd() {
+        var str = document.getElementById("add").value;
+        document.getElementById("Padd").value = str;
+      }
+    </script>
+  </body>
+</html>

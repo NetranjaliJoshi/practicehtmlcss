@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="cls1">
+        <img id="img1" src="../Assets/Images/pizza.jpg" alt="pizza" width="300px" height="300px"><br>
+        <!-- <strong id="img1">pizza</strong> -->
+        <button type="button" onclick="changeImage()">Change image</button>
+
+    </div>
+    
+</body>
+<script>
+    function changeImage()
+    {
+        document.getElementById("img1").src="../Assets/Images/momo2.jpg";
+       
+        document.getElementById("img1").innerHTML="momos";
+
+    }
+</script>
+</html>

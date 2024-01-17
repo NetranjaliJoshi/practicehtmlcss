@@ -1,0 +1,30 @@
+* {
+  background-color: #e6ffe6;
+  padding: 0px;
+  margin: 0;
+}
+.nav span {
+  font-size: 25px;
+  background-color: #1aff1a;
+  padding: 20px;
+  align-items: center;
+  margin: 20px;
+  color: #004d00;
+}
+.nav-sub {
+  margin-top: 50px;
+  padding-top: 50px;
+}
+.nav {
+  background-color: #1aff1a;
+  height: 80px;
+  align-items: center;
+}
+.main-img img {
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+}
+h1 {
+  color: #00b300;
+}

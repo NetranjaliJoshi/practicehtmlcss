@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="imges">
+      <img src="../assets/Images/asta.jpg" alt="" id="img1" />
+      <h1 id="ImgName"></h1>
+
+      <div class="btn">
+        <button type="button" onclick="changeImg1()">Deku</button>
+        <button type="button" onclick="changeImg2()">Naruto</button>
+        <button type="button" onclick="changeImg3()">Asta</button>
+        <button type="button" onclick="changeImg4()">Hinata</button>
+      </div>
+    </div>
+    <script>
+      function changeImg1() {
+        document.getElementById("img1").src = "../assets/Images/myhero.jpg";
+        document.getElementById("ImgName").innerHTML = "Deku";
+      }
+      function changeImg2() {
+        document.getElementById("img1").src = "../assets/Images/naruto.jpg";
+        document.getElementById("ImgName").innerHTML = "Naruto";
+      }
+      function changeImg3() {
+        document.getElementById("img1").src = "../assets/Images/asta.jpg";
+        document.getElementById("ImgName").innerHTML = "Asta";
+      }
+      function changeImg4() {
+        document.getElementById("img1").src = "../assets/Images/hinata.jpg";
+        document.getElementById("ImgName").innerHTML = "Hinata";
+      }
+    </script>
+  </body>
+</html>

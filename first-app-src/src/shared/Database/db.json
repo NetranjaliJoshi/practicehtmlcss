@@ -1,0 +1,77 @@
+{
+  "product": [
+    {
+      "id": 102,
+      "name": "mobile",
+      "price": 500,
+      "company": "Redmi"
+    },
+    {
+      "id": 103,
+      "name": "USB",
+      "price": 100,
+      "company": "sony"
+    },
+    {
+      "id": 104,
+      "name": "Adaptor",
+      "price": 1000,
+      "company": "Toshiba"
+    },
+    {
+      "id": 105,
+      "name": "cable",
+      "price": 1000,
+      "company": "firbase"
+    },
+    {
+      "name": "printer",
+      "price": "1500",
+      "company": "hp",
+      "id": 106
+    },
+    {
+      "name": "PC",
+      "price": "1200",
+      "company": "hp",
+      "id": 107
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "userId": "admin",
+      "userpass": "admin@123"
+    },
+    {
+      "id": 2,
+      "userId": "king",
+      "userpass": "king@123"
+    },
+    {
+      "id": 3,
+      "userId": "queen",
+      "userpass": "queen@123"
+    },
+    {
+      "id": 4,
+      "userId": "Rhutu",
+      "userpass": "Rhutu@123"
+    },
+    {
+      "id": 5,
+      "userId": "Aditi",
+      "userpass": "Adit@123"
+    },
+    {
+      "id": 6,
+      "userId": "netra",
+      "userpass": "netra@123"
+    },
+    {
+      "id": 7,
+      "userId": "admin",
+      "userpass": "admin@123"
+    }
+  ]
+}

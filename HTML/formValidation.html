@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 10px 50px;
+      }
+      .formdesign {
+        font-size: 28px;
+      }
+      .formdesign input {
+        width: 50%;
+        padding: 12px 20px;
+        border: 1px solid blue;
+        margin: 14px;
+        border-radius: 4px;
+        font-size: 20px;
+      }
+      .formerror {
+        color: red;
+        font-size: 20px;
+      }
+      .btn {
+        border-radius: 16px;
+        width: 100px;
+        height: 40px;
+        background-color: greenyellow;
+        border: 2px solid green;
+        font-size: larger;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form validation</h1>
+    <form
+      action=""
+      onsubmit="return validateForm()"
+      name="myform"
+      method="post"
+    >
+      <div class="formdesign">
+        <label for="">Name</label>
+        <input type="text" id="name" name="fname" /><br />
+        <span class="formerror"></span>
+      </div>
+      <div class="formdesign">
+        <label for="">email</label>
+        <input type="text" id="email" name="email" /><br />
+        <span class="formerror"></span>
+      </div>
+
+      <div class="formdesign">
+        <label for="">Phone no</label>
+        <input type="text" id="phone" name="phone" /><br />
+        <span class="formerror"></span>
+      </div>
+
+      <div class="formdesign">
+        <label for="">Password</label>
+        <input type="password" id="password" name="password" /><br />
+        <span class="formerror"></span>
+      </div>
+      <div class="formdesign">
+        <label for="">Confrim Password </label>
+        <input type="text" name="conpass" /><br />
+        <span class="formerror"></span>
+      </div>
+      <input type="submit" value="Submit" class="btn" />
+    </form>
+
+    <script>
+      function setError(id, error) {
+        // sets error inside tag of id
+        element = document.getElementById(id);
+        console.log(element);
+        element.getElementByClassName("formSerror")[0].innerHTMl = error;
+      }
+
+      function validateForm() {
+        var returnval = true;
+        var name = document.forms["myform"]["fname"].value;
+        //console.log(name.length);
+        if (name.length < 5) {
+          console.log(name);
+          setError(name, "*Length of name is too short");
+          returnval = false;
+        }
+
+        return returnval;
+      }
+    </script>
+  </body>
+</html>

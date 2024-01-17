@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="./beforeFormSubmit.js"></script>
+     <link rel="stylesheet" href="./beforeFormSubmit.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="frm">
+        <label>Enter User Id</label> <br>
+        <input type="text" name="uid" id="uid" onblur="checkAll()" placeholder="enter user id"> <br>
+        <span id="uidErr"></span><br><br>
+        <label>Enter Password</label> <br><br>
+        <input type="password" name="pass" id="pass" onblur="checkPass()" placeholder="enter password"> <br>
+        <span id="uPswd"></span>
+
+        <br><br>
+        <div class="form-group">
+            <label for="">Select Your Course:</label>
+            <select name="course" id="course" class="form-control" onblur="CheckSelect()">
+                <option value="">Select Your Course</option>
+                <option value="react">React</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="angular">Angular</option>
+            </select>
+            <span id="ucourse"></span>
+        </div>
+
+        <br><br>
+
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+       
+       
+       
+       
+    </form>
+</body>
+</html>

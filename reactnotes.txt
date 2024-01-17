@@ -1,0 +1,378 @@
+
+16/12/23
+
+
+React: 
+-it is library which is use to create rich UI.
+-it create signle page application.
+-it work on component. 
+-it just library ,not a framework 
+
+*to learn learn react you must be avare about 
+-html
+-css
+-js
+
+*s/w pre-requisit
+-nodejs 
+-text editor 
+
+*ther are two ways to crate react project 
+1.By using npx (no need to install configuration file 
+step1:npx create-react-app projectName
+step2:cd projectname 
+step3:npm start 
+
+2.By using npm(need to install first cinfiguration file) 
+step1:npm install create-react-app 
+ste2:create-react-app projectName
+step3:cd projectName
+step4:npm start 
+
+Q.what is differance between React and Angular. 
+Q.what is babel in react.
+Q.what is component 
+  -it is partial part of your web application.
+  -it can be reuse multiple time.
+  -it can be any part like -header,footer,section,nav... 
+  -in react app.js is root component 
+
+*SPA:
+-it is single Page Application.
+-in this only index.html page will display on browser and remaing are it component
+
+*In React we have two thpes of component 
+1.function component : when your main focus is on UI Design 
+2.class component : when we have write comples logical code 
+
+Note: while create component in react always  start component name with uppercase letter
+
+*how to display individual component output 
+- to display individual component output for that we have write component name as tag where you want 
+
+MyFcComp 
+MyClassComp (fname,lname,company,gender,age)
+=============================================
+18/12/23
+
+*What is JSX(Javascript and XML) React :
+-it allows us to use html code in react,
+-it makex react code easy.
+-in jsx we must jave one parent to wrap another element in it, paren can be any block element.
+
+
+*props :
+-it is a parameter or function parameter which is use to pass data inside component
+-it return object type of data.
+-in function component we can access props by props.propsName.
+-in class component we can access props by this.props.propsName  
+
+*destructure of props: 
+-creating a constant variable and stroring data in it.
+
+*state in react :
+-state in react is use to handle essential data in class component.
+-state available only in class component.
+-state we write in class component contructor.
+-state return data in object formate.
+-we can acess state data outside state by writting 
+ this.state.propertyName
+
+*setState: 
+-it is use to update state data 
+*how to destructure state
+
+*function and events in react 
+*How to write and execute default and parameterize function 
+*Use of onMouseOver and onClick events
+
+rendering : display data on browser 
+*Conditional rendering : display component output or view conditionaly.
+1.if else:
+2.element as variable: in this is store data in variable and return that variable
+3.use of ternary operator : it is an short hand hand syntax for if else.
+              syntax:  (condition) ? truepart : false ;
+4.short circuit : in this if condition is true then only it will display component output. it is denoted by &&
+
+
+*how to display images 
+*how to display multimedia 
+*How to access data from constant file 
+
+*How to use css 
+1.intrernal css :
+2.external css : in this we create a seperate css file and import it ion component
+3.module css :  if you want to write css property perticular component in that case we use it.
+-it will work only when you import it.
+-file must save with fileName.module.css 
+
+*component Interaction 
+-accessing data from one component to another component.
+-to access data from one component to another component for that they must have parent child relation, to make parent child relation in between for that we write child component name as tag in parent component.
+
+* how to pass state as props 
+* how to pass method as props 
+
+*PureComponent:
+-it prevent unnecessary re-rendering of class component.
+-it perform shalow camparion 
+-to achive this we have to extends class with PureComponent class.
+
+*React.memo():
+-it prevent unnecessary re-rendering of function component.
+-it perform shalow camparion .
+-to achive this we have to React.memo() method.
+
+*How to use Bootstrap in React app 
+*how to download Bootstrap 
+ step1: install bootstrap 
+       npm i bootstrap 
+step2: import its path in inde.js file 
+       import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+=========================================================
+19/12/23
+
+*** IMP 
+HOC(Heigher Order Component)
+-when we have same bussiness logic and want to share with multiple component
+-in hoc we share logic from function to class component
+
+*Use of react snipet for create class and function component
+
+rce => it will create class component
+rconst => it generate contructor with super methode and with state
+
+rfce = it will generate function component
+rafce => it will generate function component with arrow function.
+
+*render props : 
+-when we have same bussiness logic and want to share with multiple component.
+-in this we share logic from class component to another class and function.
+
+*Fragment or React.Fragment:
+-it is an alternative for JSX.
+-Which Remove unwanted element from react project 
+
+*How to render List by using Array data 
+***Virtual DOM :
+H.w 
+You have to display employee information in table with empId,EmpName,empPost,empSalary,empGender,empContact,empAddress for 10 employee
+=======================================================
+20/12/23
+*ErrorBoundary:
+-It is component in react which use to handle errors in component.
+-in this we use two component lifecycle methode 
+1.getDerivedStateFormError: it is static method which execute when error occure in component and it terun state value
+2.componentDidCatch :it display error log (information)
+
+*Component Lifecycle method
+-class component has lifecycle methode 
+-it comes with four phases 
+1.Mounting phase:
+   -constructor: it invoke automatically when component initialize.
+   -getDerivedStateFormProps: it is static methode which is use to assign data coming from props to state
+   -render: it is use to display component data or information on browser.
+   -componentDidMount: it will execute once after render methode 
+2.update phase , it gives us boolean value.
+    -shouldcomponentUpdate:it is use to decide wether component should update or not
+    -render: 
+    -getSnapshotBeforeUpdate: it hold previus data or information of state and props,
+    -componentWillupdate:it hold updated data or information of state and props.
+3.unmounting phase:
+  -componentWillUnmount: it will execute just before deleting an component. it is use disconnect all connect with other component.
+4.Error phase:
+  -getDerivedStateFormError:
+  -componentDidCatch:     
+
+
+*Routing in React :
+-navigation of component to display data
+-in this we create routing path for component and  we write path name in browser url to display component view or output.
+-to perform routing in react first we have ti instat react-router-dom library. 
+-in react-router-dom library it contain BrowserRouter,Routes and Route library which is use to perform routing
+-in routing BrowserRouter must be parent element for all routing. means all routing should under BrowserRouter.
+
+*how to install react-router-dom 
+npm i react-router-dom 
+
+*there are multiple types of routing 
+1.naming routing : by writting path name in browser url to display component output.
+2.default routing: disply component view by default means without writting path name in browser. in this pathname must blank
+3.parameterize routing: in this we have pass parameter with pathname in browser url.
+4.child routing : defining one routing inside another ,in this we use Outlet
+5.wildcard routing: display component output when you write wrong pathname in browser url, for this we have to * in path name.
+IMP: wild card routing always define at last otherwise its bellow routing will never work.
+
+ReactHooksComp (function)
+UseStateHookComp (function)
+UseEffectHookComp (function)
+
+*React Hooks 
+-Hooks in react function component provide class component feature and allues to use state in function component.
+-in react hooks introduce in react verion 16 
+
+Rules for hooks 
+-hooks available only on function component.
+-hooks can not be render conditionaly.
+-hooks always use in top level component.
+
+*useState hook:
+-it allows us to use state in function coomponent.
+-it gives two value in array 1.current-state,3.function to update state 
+-to use useState hook first we have to import from react library.
+-in useState hooks we can pass number,string,boolean,array and object type of data 
+
+*useEffect hooks:
+-it is use to perform side effect or action in function component.
+-side effect means fetching data from server,Dom manipulation and event handling.
+-useEffect hooks takes two parameter 1.callback function , 
+ 2.dependency
+-useEffect hooks execute after render method 
+
+*How to create REST Fake API 
+step1: install json server 
+npm install -g json-server
+step2: create databse 
+ src = > shared folder =>database folder =>db.json
+step3: go to folder and start server 
+cd src/shared/database (press enter)
+json-server --watch -p 8888 db.json 
+
+DashboardComp function component
+*install axios 
+npm install axios
+
+*we pwrform get request by using axios 
+================================================
+21/12/23
+
+*concurrently : 
+-it allows us to execute multiple command simultaniusly.
+
+*How to use concurrently library 
+step1: install it 
+npm i -g concurrently
+step2 : go to package.json file write command in script part
+     "json-server":"cd src/shared/database && json-server --watch -p 8888 db.json",
+
+     "start-dev":"concurrently \"npm start\" \"npm run json-server\"",
+
+step3: stop all server and write one coomand in project path 
+      npm run start-dev 
+
+*use of Font-awesome library 
+-it provide icon in react project 
+*how to use font-awesome 
+step1: install it 
+      npm i font-awesome
+step2: go to index.js file and import it 
+     import '../node_modules/font-awesome/css/font-awesome.min.css';
+step3: go to their official website and copy symbolcode and use in your project 
+       https://fontawesome.com/v4/     
+
+*We perform delete request
+*We perform post request
+* Use of useNavigate Hook
+* Use of useParams Hook
+*We perform put request
+
+*React-bootsrap: 
+-it provide un inbuilt component
+-component provided by react are responsive and more suportive in react app.
+-it is an open sourse 
+
+-it official website for react bootsrap is 
+https://react-bootstrap.netlify.app/
+
+
+*how to use bootstrap 
+step1: install it 
+npm install react-bootstrap bootstrap
+step2: import its path in index.js file 
+step3: first import it and then use in react app 
+
+*how to use Button 
+*how to use Carosuel 
+*how to use Modal
+
+*web-storage :
+-it is use to store user data on browser 
+-ther are two types 
+1.local storage : it store user data for permanantly
+2.session storage : it is use to store user data for limited time 
+
+
+localStorage.setItem("user1","Sammed"); // to set user on localStorage
+localStorage.setItem("user2","Vishwas");
+localStorage.getItem("user1")        // to get user on localStorage
+localStorage.removeItem("user3");  // to remove sinle user from localStorage
+localStorage.clear();              // to remove all user from localStorage 
+
+*same Method are available for session storage. 
+
+LoginComp
+
+*Material UI :
+*How to install Material UI
+npm install @mui/material @emotion/react @emotion/styled
+
+*How to use material icon 
+npm install @mui/icons-material 
+
+*useRef Hooks :
+-it allows to access dom node directly as well as its value.
+-it has one property with name current which return us value.
+
+*What is reducx 
+*what is store
+*What is Action
+*what is reducer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

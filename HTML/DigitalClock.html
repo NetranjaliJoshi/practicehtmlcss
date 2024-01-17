@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Merriweather:wght@700&family=Mulish&family=Nunito+Sans:wght@200&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .main {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 300px;
+        font-family: "Josefin Sans", sans-serif;
+        font-family: "Merriweather", serif;
+        font-family: "Mulish", sans-serif;
+        font-family: "Nunito Sans", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-size: xxx-large;
+        border: 2px dashed;
+        width: max-content;
+        height: max-content;
+        border-radius: 5px;
+        padding: 20px;
+      }
+      .clock {
+        padding: 10px;
+        justify-content: space-around;
+      }
+      span {
+        border: 2px dashed;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div id="clock">
+        <span id="hour"></span>
+        <span id="min"></span>
+        <span id="sec"></span>
+      </div>
+    </div>
+
+    <script>
+      function myClock() {
+        var mytime = new Date();
+        document.getElementById("hour").innerHTML = mytime.getHours();
+        document.getElementById("min").innerHTML = mytime.getMinutes();
+        document.getElementById("sec").innerHTML = mytime.getSeconds();
+      }
+      setInterval(myClock, 1000);
+    </script>
+  </body>
+</html>

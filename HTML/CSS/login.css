@@ -1,0 +1,46 @@
+header {
+  background-color: aqua;
+  border-bottom: 5px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  border: 2px solid red;
+  height: 80px;
+  width: 80px;
+  margin: 6px;
+  border-radius: 50%;
+  box-shadow: 8px 2px 3px black;
+}
+.mytitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: red;
+  text-shadow: 6px 2px 2px black;
+}
+
+.nav-container {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: aquamarine;
+  /* width: 170px; */
+  overflow: auto;
+  /* display: flex; */
+}
+li {
+  float: left;
+}
+.nav-container li a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  padding: 5px 10px;
+  color: mediumblue;
+}
+.nav-container li a:hover {
+  background-color: black;
+  color: white;
+}

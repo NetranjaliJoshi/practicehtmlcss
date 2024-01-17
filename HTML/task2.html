@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*1 desendent combinator(space)*/
+
+      .grandfather p {
+        color: red;
+      }
+      .grandfather > p {
+        color: green;
+        background-color: antiquewhite;
+        font-size: 20px;
+      }
+
+      /*adjecnt sibling combinator(+)*/
+      .grandfather + p {
+        background-color: yellow;
+      }
+      /*4 all general sibling combinator*/
+      .grandfather ~ p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is program-1</p>
+    <p>this is para-2</p>
+    <span>
+      <div class="grandfather">
+        <p>This is pra-3</p>
+        <p>this is para-4</p>
+        <span>
+          <p>this is para-5</p>
+        </span>
+        <p>this para-6</p>
+      </div>
+      <p>this para-7</p>
+      <p>this para-8</p>
+      <p>this para-9</p>
+    </span>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- external js  -->
+    <script src="./afterFormSubmiting.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <br><br>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <form name="myform" onsubmit="return checkAll()">
+                    <div class="form-group">
+                    <label for="" class="form-label">Enter Your FullName:</label>
+                    <input type="text" name="fname" id="fname" placeholder="enter your fullname" class="form-control">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="" class="form-label">Enter Your Password:</label>
+                        <input type="text" name="pass" id="pass" placeholder="Enter Your Password:" class="form-control">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="" class="form-label">Enter Your Email:</label>
+                        <input type="text" name="email" id="email" placeholder="Enter Your Email:" class="form-control">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Select Your Qualification:</label>
+                        <input type="checkbox" name="edu" value="ssc" class="form-check-input">SSC
+                        <input type="checkbox" name="edu" value="hsc" class="form-check-input">HSC
+                        <input type="checkbox" name="edu" value="ug" class="form-check-input">UG
+                        <input type="checkbox" name="edu" value="pg" class="form-check-input">PG
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="">Select Your Course:</label>
+                        <select name="course" id="course" class="form-control">
+                            <option value="">Select Your Course</option>
+                            <option value="react">React</option>
+                            <option value="java">Java</option>
+                            <option value="python">Python</option>
+                            <option value="angular">Angular</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                   </form>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

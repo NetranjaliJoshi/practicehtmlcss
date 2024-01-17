@@ -1,0 +1,83 @@
+* {
+  padding: 0px;
+  margin: 0;
+}
+body {
+  background-color: pink;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  font-weight: bold;
+}
+.heading h1 {
+  font-weight: bold;
+}
+.heading .logo {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0px;
+}
+.heading img {
+  width: 70px;
+  height: 70px;
+}
+
+.nav-bar span {
+  padding: 10px;
+  margin: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.heading .left {
+  padding: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+.tagline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: last baseline;
+  margin-top: 30px;
+}
+.tagline h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.tagline p {
+  justify-content: center;
+}
+.window {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.sub-window {
+  width: 500px;
+  height: 300px;
+  border: 1px solid;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+}
+.bi-tree-fill {
+  font-size: 70px;
+}
+.bi-lock-fill {
+  font-size: 70px;
+}
+
+.bi-rocket-takeoff-fill {
+  font-size: 70px;
+}

@@ -1,0 +1,90 @@
+`<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        height: 500px;
+        margin: auto;
+      }
+      .text-input {
+        margin-top: 10px;
+      }
+      .text-input input {
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+      .text-input input {
+        padding: 8px;
+      }
+      text-input label {
+        font-size: x-large;
+      }
+      .btn {
+        margin-top: 20px;
+      }
+      #str2 {
+        margin-left: 31px;
+      }
+      .btn {
+        padding: 10px;
+        color: black;
+        background-color: rgb(131, 237, 131);
+        border: 2px green;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="para">
+        <h3>your content</h3>
+        <p id="text">
+          Student life is one of the most memorable phases of a person’s life.
+          The phase of student life builds the foundation of our life. In
+          student life, we do not just learn from books. We learn to grow
+          emotionally, physically, philosophically as well as socially. Thus, in
+          this student life essay, we will learn its essence and importance.
+        </p>
+      </div>
+
+      <div class="text-input">
+        <label for="num1">Replace text</label>
+        <input type="text" placeholder="" id="str1" name="num1" /><br />
+
+        <label for="num1" id="new">New text</label>
+        <input type="text" placeholder="" id="str2" name="num1" /><br />
+      </div>
+
+      <div class="btn">
+        <input type="button" value="Replace Single" onclick="myReplace()" />
+        <input type="button" value="Replace All" onclick="myReplaceAll()" />
+      </div>
+    </div>
+
+    <script>
+      function myReplace() {
+        var str = document.getElementById("text").innerHTML;
+        var txt1 = document.getElementById("str1").value;
+        var txt2 = document.getElementById("str2").value;
+        console.log(txt1);
+        document.getElementById("text").innerHTML = str.replace(txt1, txt2);
+      }
+
+      function myReplaceAll() {
+        var str = document.getElementById("text").innerHTML;
+        var txt1 = document.getElementById("str1").value;
+        var txt2 = document.getElementById("str2").value;
+        console.log(txt1);
+        document.getElementById("text").innerHTML = str.replaceAll(txt1, txt2);
+      }
+    </script>
+  </body>
+</html>

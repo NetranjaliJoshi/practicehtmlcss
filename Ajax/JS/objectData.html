@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // object data 
+        var emp = { id: 101, name: "Vishwas", post: "Manager", salary: 95000, address: "Pune" };
+        console.log(emp);
+
+        // convert object data into json 
+        var jsonData = JSON.stringify(emp);
+        document.write(jsonData);
+     
+        // converting json data into javascript object 
+          var empData = JSON.parse(jsonData);
+
+    </script>
+</body>
+
+</html>
